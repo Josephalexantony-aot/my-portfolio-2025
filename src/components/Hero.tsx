@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-20 left-20 w-64 h-64 bg-accent-400/10 dark:bg-accent-600/10 rounded-full filter blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-4 z-10 py-16">
+      <div className="container mx-auto px-8 z-10 py-16">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           <motion.div 
             className="w-full md:w-3/5"
