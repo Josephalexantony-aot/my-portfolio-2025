@@ -15,8 +15,8 @@ export const projects: Project[] = [
     description: 'A modern e-commerce platform built with React and Node.js, featuring real-time inventory management and secure payment processing.',
     image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    githubLink: 'https://github.com/username/ecommerce-platform',
-    demoLink: 'https://ecommerce-platform.demo.com'
+    githubLink: 'https://github.com/Josephalexantony-aot/E-Commerce-App',
+    demoLink: 'https://josephalexantony-aot.github.io/E-Commerce-App'
   },
   {
     id: 'project-2',
