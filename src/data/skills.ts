@@ -77,7 +77,7 @@ export const skills: Skill[] = [
     name: 'AWS',
     icon: 'aws',
     category: 'tools',
-    level: 7,
+    level: 5,
   },
   {
     name: 'Next.js',

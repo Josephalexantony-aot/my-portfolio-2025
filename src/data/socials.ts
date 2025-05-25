@@ -19,6 +19,6 @@ export const socials: Social[] = [
   {
     name: 'Email',
     icon: 'mail',
-    url: 'alexantony.see@gmail.com'
+    url: 'https://mail.google.com'
   }
 ];

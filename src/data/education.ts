@@ -1,18 +1,25 @@
 import { Education } from '../types';
 
-export const education: Education[] = [
+export const education: Education[] = [ 
   {
-    id: 'edu-1',
-    school: 'University of Technology',
-    degree: 'Master of Computer Science',
-    period: '2015 - 2017',
-    description: 'Specialized in Software Engineering with focus on distributed systems and cloud architecture.'
+    id: 'PG',
+    school: 'Indian Institute of Technologies PKD',
+    degree: 'Postgraduate Diploma in Cloud Computing',
+    period: '2021 - 2022',
+    description: 'Focused on cloud architecture, distributed systems, microservices, and DevOps practices. Completed multiple hands-on projects using AWS, Docker, and Kubernetes.'
   },
   {
-    id: 'edu-2',
-    school: 'State University',
-    degree: 'Bachelor of Science in Computer Science',
-    period: '2011 - 2015',
-    description: 'Graduated with honors. Coursework included data structures, algorithms, database systems, and web development.'
+    id: 'UG',
+    school: 'Mahatma Gandhi University',
+    degree: 'Bachelor of Computer Science',
+    period: '2018 - 2021',
+    description: 'Studied core computer science subjects including data structures, operating systems, computer networks, and web development. Engaged in collaborative coding projects and academic research.'
+  },
+  {
+    id: 'Diploma',
+    school: 'Darshana Institute of Philosophy',
+    degree: 'Diploma in Philosophy',
+    period: '2016 - 2018',
+    description: 'Explored classical and modern philosophical thought with a focus on logic, ethics, and critical thinking. Developed strong analytical and reasoning skills applicable across disciplines.'
   }
 ];

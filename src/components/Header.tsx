@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          AX
+         AlexAntony
         </motion.a>
 
         {/* Desktop Navigation */}

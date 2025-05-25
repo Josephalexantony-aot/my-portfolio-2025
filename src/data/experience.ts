@@ -3,38 +3,51 @@ import { Experience } from '../types';
 export const experiences: Experience[] = [
   {
     id: 'exp-1',
-    company: 'Tech Innovations Inc.',
-    position: 'Senior Full Stack Developer',
-    period: 'Jan 2022 - Present',
+    company: 'AOT-Technologies',
+    position: 'Software Engineer III',
+    period: 'Jan 2025 - Present',
     description: [
-      'Lead development of microservices architecture for enterprise clients',
-      'Implemented CI/CD pipelines reducing deployment time by 40%',
-      'Mentored junior developers and conducted code reviews',
-      'Optimized database queries resulting in 30% performance improvement'
+      'Architected and led the development of scalable microservices for enterprise platforms',
+      'Established CI/CD workflows, reducing deployment time by 40%',
+      'Mentored junior engineers, improving overall code quality through regular reviews',
+      'Optimized critical database operations, improving system performance by 30%'
     ]
   },
   {
     id: 'exp-2',
-    company: 'Digital Solutions Ltd.',
-    position: 'Full Stack Developer',
-    period: 'Mar 2019 - Dec 2021',
+    company: 'AOT-Technologies',
+    position: 'Software Engineer II',
+    period: 'Jan 2023 - Dec 2024',
     description: [
-      'Developed and maintained multiple web applications using React and Node.js',
-      'Collaborated with UX/UI designers to implement responsive interfaces',
-      'Integrated third-party APIs and payment gateways',
-      'Participated in Agile development processes with bi-weekly sprints'
+      'Built and maintained web applications using React, Node.js, and TypeScript',
+      'Collaborated with cross-functional teams to deliver accessible, responsive UIs',
+      'Integrated secure payment systems and external APIs across multiple platforms',
+      'Contributed to Agile workflows, participating in planning, demos, and retrospectives'
     ]
   },
   {
     id: 'exp-3',
-    company: 'WebCraft Studios',
-    position: 'Frontend Developer',
-    period: 'Jun 2017 - Feb 2019',
+    company: 'AOT-Technologies',
+    position: 'Software Engineer I',
+    period: 'Jan 2022 - Dec 2022',
     description: [
-      'Built responsive web interfaces using React and Redux',
-      'Converted design mockups into functional web pages',
-      'Worked with REST APIs to integrate backend services',
-      'Implemented unit tests using Jest and React Testing Library'
+      'Developed interactive frontend features using React, Redux, and SCSS',
+      'Transformed Figma and AdobeXD designs into production-ready UIs',
+      'Integrated RESTful APIs to deliver real-time data-driven interfaces',
+      'Wrote unit tests using Jest and React Testing Library to ensure reliability'
+    ]
+  },
+  {
+    id: 'exp-4',
+    company: 'AOT-Technologies',
+    position: 'Frontend Developer',
+    period: 'May 2021 - Dec 2021',
+    description: [
+      'Implemented UI components with React and Redux for enterprise applications',
+      'Collaborated closely with designers to translate mockups into responsive layouts',
+      'Integrated backend APIs and ensured seamless client-server communication',
+      'Improved test coverage by writing reusable unit tests with Jest'
     ]
   }
-];
+]
+;
