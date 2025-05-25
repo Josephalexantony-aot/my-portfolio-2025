@@ -2,7 +2,7 @@ import { Education } from '../types';
 
 export const education: Education[] = [ 
   {
-    id: 'PG',
+    id: 'PG', 
     school: 'Indian Institute of Technologies PKD',
     degree: 'Postgraduate Diploma in Cloud Computing',
     period: '2021 - 2022',

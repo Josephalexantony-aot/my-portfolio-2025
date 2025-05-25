@@ -1,29 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "../data/projects";
 import SectionTitle from "./SectionTitle";
 
 const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<string>("all");
+  const allTags = Array.from(
+    new Set(projects.flatMap((project) => project.tags.map((tag) => tag.toLowerCase())))
+  );
 
-  const filterTags = [
-    "All",
-    ...new Set(projects.flatMap((project) => project.tags)),
-  ];
-
-  const filteredProjects =
-    filter === "all"
-      ? projects
-      : projects.filter((project) => project.tags.includes(filter));
+  const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
+      transition: { staggerChildren: 0.1 },
     },
   };
 
@@ -40,20 +32,17 @@ const Projects: React.FC = () => {
     <section id="projects" className="py-20 bg-white dark:bg-secondary-900">
       <div className="container mx-auto px-4">
         <SectionTitle title="Projects" subtitle="Explore my recent work" />
+
+        {/* Tags shown just for display */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {filterTags.map((tag) => (
+          {[ ...allTags].map((tag) => (
             <motion.button
               key={tag}
-              onClick={() => setFilter(tag.toLowerCase())}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                filter === tag.toLowerCase()
-                  ? "bg-primary-600 text-white shadow-md"
-                  : "bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-300 hover:bg-secondary-200 dark:hover:bg-secondary-700"
-              }`}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all bg-secondary-100 dark:bg-secondary-800 text-secondary-700 dark:text-secondary-300 hover:bg-secondary-200 dark:hover:bg-secondary-700`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {tag}
+              {capitalize(tag)}
             </motion.button>
           ))}
         </div>
@@ -65,7 +54,7 @@ const Projects: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {filteredProjects.map((project) => (
+          {projects.map((project) => (
             <motion.div
               key={project.id}
               variants={itemVariants}
